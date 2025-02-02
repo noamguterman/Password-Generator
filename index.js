@@ -15,7 +15,16 @@ function random15chars() {
 }
 
 function generatePasswords() {
+    pass1El.classList.remove("fade-in")
+    pass2El.classList.remove("fade-in")
+
+    void pass1El.offsetWidth
+    void pass2El.offsetWidth
+
     pass1El.textContent = random15chars().join("")
     pass2El.textContent = random15chars().join("")
+
+    pass1El.classList.add("fade-in")
+    pass2El.classList.add("fade-in")
 }
 
