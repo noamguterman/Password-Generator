@@ -1,36 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
+  padding: 1em;
   background-color: #1c1c1c;
   color: white;
   font-family: "Inter", sans-serif;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+}
+button {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  max-width: 700px;
   background-color: #1f2937;
-  width: 550px;
-  height: 550px;
   margin: 0 auto;
+  border-radius: 10px;
+  padding: 5em;
 }
 
 .title {
   font-family: "Karla", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
-  width: 65%;
-  padding: 80px 0 0 50px;
-  margin-bottom: 0;
+  margin: 0;
+}
+.title span {
+  color: #4adf86;
+  display: block;
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  padding-left: 50px;
-  margin-top: 15px;
+  margin: 0;
+  margin-top: .7em;
 }
 
 .btn {
@@ -38,49 +45,76 @@ body {
   background-color: #10b981;
   border: none;
   border-radius: 5px;
-  padding: 8px 10px;
-  font-family: inherit;
+  font-size: 1rem;
   font-weight: 500;
-  width: 190px;
-  height: 40px;
-  margin: 40px 0 0 50px;
+  margin-top: 6em;
+  padding: 1.5em 2em;
 }
-
 .btn:active {
   background-color: #165741;
-}
-
-.lime {
-  color: #4adf86;
 }
 
 hr {
   border: none;
   height: 1px;
   background-color: #2f3e53;
-  margin: 40px auto;
-  width: 80%;
+  margin: 2.5em auto;
 }
 
 .password-container {
   display: flex;
-  justify-content: center;
-  margin: 30px auto;
-  gap: 20px;
+  justify-content: space-between;
 }
-
 .password-box {
   display: inline-flex;
   flex-direction: row;
   background-color: #273549;
-  width: 210px;
-  height: 40px;
+  width: 13em;
+  height: 3em;
   border-radius: 5px;
   justify-content: center;
-  align-items: center;
 }
-
 .password-text {
   color: #55f991;
   font-weight: 500;
+}
+
+@media (max-width: 630px) {
+  .container {
+    padding: 3em;
+  }
+  .btn {
+    width: 100%;
+  }
+  .password-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .password-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 2em;
+  }
+  .btn {
+    margin-top: 5em;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .btn {
+    margin-top: 3em;
+  }
 }
