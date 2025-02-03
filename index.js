@@ -2,6 +2,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 const pass1El = document.getElementById("pass1")
 const pass2El = document.getElementById("pass2")
+const alert = document.querySelector('small')
 
 function random15chars() {
     const arr = []
@@ -15,16 +16,26 @@ function random15chars() {
 }
 
 function generatePasswords() {
-    pass1El.classList.remove("fade-in")
-    pass2El.classList.remove("fade-in")
+    alert.classList.remove('fade-in')
+
+    pass1El.classList.remove('fade-in')
+    pass2El.classList.remove('fade-in')
 
     void pass1El.offsetWidth
     void pass2El.offsetWidth
 
-    pass1El.textContent = random15chars().join("")
-    pass2El.textContent = random15chars().join("")
+    pass1El.textContent = random15chars().join('')
+    pass2El.textContent = random15chars().join('')
 
-    pass1El.classList.add("fade-in")
-    pass2El.classList.add("fade-in")
+    pass1El.classList.add('fade-in')
+    pass2El.classList.add('fade-in')
 }
 
+pass1El.addEventListener('click', () => copyToClipboard(pass1El.textContent))
+pass2El.addEventListener('click', () => copyToClipboard(pass2El.textContent))
+
+function copyToClipboard(passText) {
+    navigator.clipboard.writeText(passText)
+    alert.classList.remove('fade-in')
+    setTimeout(() => alert.classList.add('fade-in'), 50)
+}

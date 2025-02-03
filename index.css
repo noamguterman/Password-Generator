@@ -74,9 +74,20 @@ hr {
   border-radius: 5px;
   justify-content: center;
 }
+
 .password-text {
   color: #55f991;
   font-weight: 500;
+  cursor: pointer;
+}
+
+small {
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+  display: block;
+  text-align: center;
+  opacity: 0;
 }
 
 @media (max-width: 630px) {
