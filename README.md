@@ -12,7 +12,7 @@ A **random password generator** built with **HTML, CSS, and vanilla JavaScript**
 ## 📝 Features  
 ✅ **Generates secure random passwords** – Uses a mix of uppercase, lowercase, numbers, and symbols.  
 ✅ **Simple and intuitive UI** – Minimalist design for ease of use.  
-✅ **Copy-ready passwords** – Users can quickly copy the generated passwords.  
+✅ **Copy-ready passwords** – Users can quickly copy the generated passwords by clicking on them.  
 ✅ **Responsive design** – Works across desktop and mobile devices.  
 ✅ **Animated UI** – Smooth fade-in effect on password generation.  
 
@@ -29,7 +29,7 @@ A **random password generator** built with **HTML, CSS, and vanilla JavaScript**
 1️⃣ Click the **"Generate Passwords"** button.  
 2️⃣ Two randomly generated passwords appear in the boxes.  
 3️⃣ Passwords include a mix of **letters, numbers, and special characters**.  
-4️⃣ Users can **copy** and use their preferred password.  
+4️⃣ Click on a password to **copy it to the clipboard**. 
 
 ---
 
@@ -46,7 +46,8 @@ A **random password generator** built with **HTML, CSS, and vanilla JavaScript**
 
 ## 🛠️ Password Generation Logic  
 - **Character Pool:** Includes uppercase, lowercase, numbers, and special symbols.  
-- **Randomized Selection:** Selects 15 random characters from the pool per password.  
+- **Randomized Selection:** Selects 15 random characters from the pool per password.
+- **Copy to Clipboard:** Clicking on a password automatically copies it to the clipboard.
 - **Dynamic UI Updates:** Smooth fade-in effect when generating new passwords.  
 
 ---
@@ -57,6 +58,7 @@ This project demonstrates **fundamental web development skills** while implement
 ✔️ **CSS animations for UI feedback**  
 ✔️ **Randomized data generation in JavaScript**  
 ✔️ **Mobile-first responsive design**  
+✔️ **Clipboard API usage for seamless copying**
 
 ---
 
