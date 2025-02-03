@@ -49,6 +49,7 @@ button {
   font-weight: 500;
   margin-top: 6em;
   padding: 1.5em 2em;
+  cursor: pointer;
 }
 .btn:active {
   background-color: #165741;
